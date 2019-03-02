@@ -1,0 +1,484 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nestedScrollView"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SignUpActivity">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/sign_up_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="16dp"
+            android:fontFamily="@font/open_sans_bold"
+            android:text="@string/sign_up_activity_registration_tv"
+            android:textColor="#202124"
+            android:textSize="16sp"
+            app:layout_constraintBottom_toTopOf="@id/divider_first"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:id="@+id/close"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="24dp"
+            android:layout_marginBottom="16dp"
+            android:contentDescription="@null"
+            android:src="@drawable/ic_close_grey_24dp"
+            app:layout_constraintBottom_toTopOf="@id/divider_first"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <View
+            android:id="@+id/divider_first"
+            android:layout_width="0dp"
+            android:layout_height="0.5dp"
+            android:layout_marginTop="24dp"
+            android:background="#D4D3D3"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/sign_up_tv" />
+
+        <TextView
+            android:id="@+id/full_name_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="32dp"
+            android:layout_marginTop="24dp"
+            android:fontFamily="@font/open_sans_bold"
+            android:text="@string/sign_up_activity_full_name_tv"
+            android:textColor="#202124"
+            android:textSize="12sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/divider_first" />
+
+
+        <EditText
+            android:id="@+id/full_name_edittext"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="32dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="32dp"
+            android:background="@drawable/sign_up_edittext_selector"
+            android:textCursorDrawable="@null"
+            android:focusable="true"
+            android:fontFamily="@font/open_sans_regular"
+            android:hint="@string/sign_up_activity_full_name_edittext_hint"
+            android:inputType="textCapWords"
+            android:padding="16dp"
+            android:textSize="14sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/full_name_tv" />
+
+        <TextView
+            android:id="@+id/email_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="32dp"
+            android:layout_marginTop="24dp"
+            android:fontFamily="@font/open_sans_bold"
+            android:text="@string/sign_up_activity_email_tv"
+            android:textColor="#202124"
+            android:textSize="12sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/full_name_edittext" />
+
+
+        <EditText
+            android:id="@+id/email_edittext"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="32dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="32dp"
+            android:background="@drawable/sign_up_edittext_selector"
+            android:textCursorDrawable="@null"
+            android:focusable="true"
+            android:fontFamily="@font/open_sans_regular"
+            android:hint="@string/login_activity_email_edittext_hint"
+            android:inputType="textEmailAddress"
+            android:padding="16dp"
+            android:textSize="14sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/email_tv" />
+
+        <TextView
+            android:id="@+id/password_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="32dp"
+            android:layout_marginTop="24dp"
+            android:fontFamily="@font/open_sans_bold"
+            android:text="@string/sign_up_activity_password_tv"
+            android:textColor="#202124"
+            android:textSize="12sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/email_edittext" />
+
+
+        <EditText
+            android:id="@+id/create_password_edittext"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="32dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="32dp"
+            android:background="@drawable/sign_up_edittext_selector"
+            android:textCursorDrawable="@null"
+            android:focusable="true"
+            android:fontFamily="@font/open_sans_regular"
+            android:hint="@string/sign_up_activity_create_password_edittext_hint"
+            android:inputType="textPassword"
+            android:padding="16dp"
+            android:textSize="14sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/password_tv" />
+
+        <TextView
+            android:id="@+id/confirm_password_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="32dp"
+            android:layout_marginTop="24dp"
+            android:fontFamily="@font/open_sans_bold"
+            android:text="@string/sign_up_activity_confirm_password_tv"
+            android:textColor="#202124"
+            android:textSize="12sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/create_password_edittext" />
+
+
+        <EditText
+            android:id="@+id/confirm_password_edittext"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="32dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="32dp"
+            android:background="@drawable/sign_up_edittext_selector"
+            android:textCursorDrawable="@null"
+            android:focusable="true"
+            android:fontFamily="@font/open_sans_regular"
+            android:hint="@string/sign_up_activity_confirm_password_edittext_hint"
+            android:inputType="textPassword"
+            android:padding="16dp"
+            android:textSize="14sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/confirm_password_tv" />
+
+
+        <TextView
+            android:id="@+id/phone_number_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="32dp"
+            android:layout_marginTop="24dp"
+            android:fontFamily="@font/open_sans_bold"
+            android:text="@string/sign_up_activity_phone_number_tv"
+            android:textColor="#202124"
+            android:textSize="12sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/confirm_password_edittext" />
+
+
+        <EditText
+            android:id="@+id/phone_number_edittext"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="32dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="32dp"
+            android:background="@drawable/sign_up_edittext_selector"
+            android:textCursorDrawable="@null"
+            android:focusable="true"
+            android:fontFamily="@font/open_sans_regular"
+            android:hint="@string/sign_up_activity_phone_number_edittext_hint"
+            android:inputType="phone"
+            android:padding="16dp"
+            android:textSize="14sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/phone_number_tv" />
+
+
+        <TextView
+            android:id="@+id/city_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="32dp"
+            android:layout_marginTop="24dp"
+            android:fontFamily="@font/open_sans_bold"
+            android:text="@string/sign_up_activity_city_tv"
+            android:textColor="#202124"
+            android:textSize="12sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/phone_number_edittext" />
+
+
+        <EditText
+            android:id="@+id/city_tv_edittext"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="32dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="32dp"
+            android:background="@drawable/sign_up_edittext_selector"
+            android:textCursorDrawable="@null"
+            android:focusable="true"
+            android:fontFamily="@font/open_sans_regular"
+            android:hint="@string/sign_up_activity_city_edittext_hint"
+            android:inputType="phone"
+            android:padding="16dp"
+            android:textSize="14sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/city_tv" />
+
+        <TextView
+            android:id="@+id/place_of_work_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="32dp"
+            android:layout_marginTop="24dp"
+            android:fontFamily="@font/open_sans_bold"
+            android:text="@string/sign_up_activity_place_of_work_tv"
+            android:textColor="#202124"
+            android:textSize="12sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/city_tv_edittext" />
+
+
+        <EditText
+            android:id="@+id/place_of_work_edittext"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="32dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="32dp"
+            android:background="@drawable/sign_up_edittext_selector"
+            android:textCursorDrawable="@null"
+            android:focusable="true"
+            android:fontFamily="@font/open_sans_regular"
+            android:hint="@string/sign_up_activity_place_of_work_edittext_hint"
+            android:inputType="phone"
+            android:padding="16dp"
+            android:textSize="14sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/place_of_work_tv" />
+
+
+        <TextView
+            android:id="@+id/faculty_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="32dp"
+            android:layout_marginTop="24dp"
+            android:fontFamily="@font/open_sans_bold"
+            android:text="@string/sign_up_activity_faculty_tv"
+            android:textColor="#202124"
+            android:textSize="12sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/place_of_work_edittext" />
+        
+        <RelativeLayout
+            android:id="@+id/faculty_spinner_relative_layout"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/sign_up_spinner_background"
+            android:layout_marginStart="32dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="32dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/faculty_tv">
+            <Spinner
+                android:id="@+id/faculty_spinner"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="16dp" />
+        </RelativeLayout>
+
+
+
+        <TextView
+            android:id="@+id/admission_year_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="32dp"
+            android:layout_marginTop="24dp"
+            android:fontFamily="@font/open_sans_bold"
+            android:text="@string/sign_up_activity_admission_year_tv"
+            android:textColor="#202124"
+            android:textSize="12sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/faculty_spinner_relative_layout" />
+
+
+        <RelativeLayout
+            android:id="@+id/admission_year_relative_layout"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="32dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="32dp"
+            android:background="@drawable/sign_up_spinner_background"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/admission_year_tv" >
+            <Spinner
+                android:id="@+id/admission_year_spinner"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="16dp"/>
+
+        </RelativeLayout>
+
+
+        <TextView
+            android:id="@+id/graduation_year_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="32dp"
+            android:layout_marginTop="24dp"
+            android:fontFamily="@font/open_sans_bold"
+            android:text="@string/sign_up_activity_graduation_year_tv"
+            android:textColor="#202124"
+            android:textSize="12sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/admission_year_relative_layout" />
+
+        <RelativeLayout
+            android:id="@+id/graduation_year_relative_layout"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="32dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="32dp"
+            android:background="@drawable/sign_up_spinner_background"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/graduation_year_tv" >
+            <Spinner
+                android:id="@+id/graduation_year_spinner"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="16dp"/>
+
+        </RelativeLayout>
+
+
+        <TextView
+            android:id="@+id/prof_area_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="32dp"
+            android:layout_marginTop="24dp"
+            android:fontFamily="@font/open_sans_bold"
+            android:text="@string/sign_up_activity_prof_area_tv"
+            android:textColor="#202124"
+            android:textSize="12sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/graduation_year_relative_layout" />
+
+        <EditText
+            android:id="@+id/prof_area_edittext"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="32dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="32dp"
+            android:background="@drawable/sign_up_edittext_selector"
+            android:textCursorDrawable="@null"
+            android:focusable="true"
+            android:fontFamily="@font/open_sans_regular"
+            android:hint="@string/sign_up_activity_prof_area_edittext_hint"
+            android:inputType="phone"
+            android:padding="16dp"
+            android:textSize="14sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/prof_area_tv" />
+
+        <TextView
+            android:id="@+id/specialization_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="32dp"
+            android:layout_marginTop="24dp"
+            android:fontFamily="@font/open_sans_bold"
+            android:text="@string/sign_up_activity_specialization_tv"
+            android:textColor="#202124"
+            android:textSize="12sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/prof_area_edittext" />
+
+        <EditText
+            android:id="@+id/specialization_edittext"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="32dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="32dp"
+            android:background="@drawable/sign_up_edittext_selector"
+            android:textCursorDrawable="@null"
+            android:focusable="true"
+            android:fontFamily="@font/open_sans_regular"
+            android:hint="@string/sign_up_activity_specialization_edittext_hint"
+            android:inputType="phone"
+            android:padding="16dp"
+            android:textSize="14sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/specialization_tv" />
+
+
+        <View
+            android:id="@+id/divider_bottom"
+            android:layout_width="0dp"
+            android:layout_height="0.5dp"
+            android:layout_marginTop="32dp"
+            android:layout_marginBottom="32dp"
+            android:background="#D4D3D3"
+            app:layout_constraintBottom_toTopOf="@id/sign_up_btn"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/specialization_edittext" />
+
+
+        <Button
+            android:id="@+id/sign_up_btn"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="32dp"
+            android:layout_marginEnd="32dp"
+            android:layout_marginBottom="32dp"
+            android:background="@drawable/sign_up_btn_background"
+            android:fontFamily="@font/open_sans_bold"
+            android:text="@string/login_activity_sign_up_btn_text"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:textSize="16sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.core.widget.NestedScrollView>

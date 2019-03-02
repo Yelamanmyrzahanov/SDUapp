@@ -1,0 +1,61 @@
+<resources>
+    <string name="app_name">SDU app</string>
+    <string name="login_activity_email_tv">ВАШ E-MAIL</string>
+    <string name="login_activity_email_edittext_hint">Введите ваш E-mail</string>
+    <string name="login_activity_password_tv">Ваш пароль</string>
+    <string name="login_activity_password_edittext_hint">Введите ваш пароль</string>
+    <string name="login_activity_remember_me_tv">Запомнить</string>
+    <string name="login_activity_forgot_password_tv"><u>Забыл пароль?</u></string>
+    <string name="login_activity_sign_in_btn_text">Войти</string>
+    <string name="login_activity_sign_up_btn_text">Регистрация</string>
+    <string name="login_activity_or_tv">ИЛИ</string>
+
+    <string name="sign_up_activity_registration_tv">Регистрация</string>
+    <string name="sign_up_activity_full_name_tv">ФИО</string>
+    <string name="sign_up_activity_full_name_edittext_hint">Введите ваше имя</string>
+    <string name="sign_up_activity_email_tv">EMAIL</string>
+    <string name="sign_up_activity_password_tv">ПАРОЛЬ</string>
+    <string name="sign_up_activity_create_password_edittext_hint">Создать пароль</string>
+    <string name="sign_up_activity_confirm_password_tv">ПОВТОРИТЕ ПАРОЛЬ</string>
+    <string name="sign_up_activity_confirm_password_edittext_hint">Повторить пароль</string>
+    <string name="sign_up_activity_phone_number_tv">ТЕЛЕФОН</string>
+    <string name="sign_up_activity_phone_number_edittext_hint">+7 (701) 555 22 11</string>
+    <string name="sign_up_activity_city_tv">ГОРОД</string>
+    <string name="sign_up_activity_city_edittext_hint">Город проживания</string>
+    <string name="sign_up_activity_place_of_work_tv">МЕСТО РАБОТЫ</string>
+    <string name="sign_up_activity_place_of_work_edittext_hint">Название компаний</string>
+    <string name="sign_up_activity_admission_year_tv">ГОД ПОСТУПЛЕНИЯ</string>
+    <string name="sign_up_activity_admission_year_edittext_hint">2011</string>
+    <string name="sign_up_activity_faculty_tv">ФАКУЛЬТЕТ</string>
+    <string name="sign_up_activity_faculty_edittext_hint">Инженерный</string>
+    <string name="sign_up_activity_prof_area_tv">ПРОФОБЛАСТЬ</string>
+    <string name="sign_up_activity_prof_area_edittext_hint">Профобласть</string>
+    <string name="sign_up_activity_specialization_tv">СПЕЦИАЛИЗАЦИЯ</string>
+    <string name="sign_up_activity_specialization_edittext_hint">Название специальности</string>
+    <string name="sign_up_activity_sign_up_btn_text">Регистрация</string>
+    <string name="sign_up_activity_graduation_year_tv">ГОД ВЫПУСКА</string>
+    <string name="sign_up_activity_graduation_year_edittext_hint">Год выпуска</string>
+    
+    <string-array name="faculties">
+        <item>Инженерный</item>
+        <item>Юриспруденция</item>
+        <item>Педагогический</item>
+        <item>Бизнес</item>
+    </string-array>
+    
+    <string-array name="admission_years">
+        <item>2011</item>
+        <item>2010</item>
+        <item>2009</item>
+        <item>2008</item>
+        <item>2007</item>
+    </string-array>
+
+    <string-array name="graduation_years">
+        <item>2018</item>
+        <item>2017</item>
+        <item>2016</item>
+        <item>2015</item>
+        <item>2014</item>
+    </string-array>
+</resources>
